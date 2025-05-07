@@ -6,6 +6,7 @@
 * 192.168.100.0/24
 * 192.168.101.0/24
 * 192.168.102.0/24
+* 
 This networks should not collide with your home network, however, adjust as necessary. 
 
 ### IP Addresses
