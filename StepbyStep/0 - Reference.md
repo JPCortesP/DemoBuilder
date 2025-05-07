@@ -20,6 +20,17 @@ This might sounds trivial, but for customization and making sure you stay consis
 * Users: My peers at Security (Byron, Brian, Giovanni)
 * My own SuperUser: jp
 
+## Azure Regions
+I Suggest using East 2 as its common to have our subscriptions blocked to some regions. 
+
+### Out of Scope / Recommended Tasks for later 
+* PIM
+* Any Conditional Access.
+* Azure Backup and stuff like that.
+* Auto-On for VMs.
+* Azure Bastion, but because its expensive, not because is hard.
+* Azure Sentinel, but because you should know more than me about that. 
+* Specific NSGs to limit traffic between Rings
 
 
 

@@ -3,7 +3,7 @@ In a nutshell, the overal steps are:
 
 * Cleanup your subscription if needed
 * Create the RGs
-* Create the VirtualNetwork and Vlans. **NSGs will also be created**
+* Create the VirtualNetwork and Subnet. **NSGs will also be created**
 * Create DC01 and remote into it (for the duration of this preparation, RDP external would be enabled)
 * Install DNS and Active Directory Role and promote the server
 * Configure VLAN DNS
@@ -15,13 +15,7 @@ In a nutshell, the overal steps are:
 * Deploy local VM in Hyper-V, connect
 * Profit $$
 
-### Out of Scope / Recommended Tasks for later 
-* PIM
-* Any Conditional Access.
-* Azure Backup and stuff like that.
-* Auto-On for VMs.
-* Azure Bastion, but because its expensive, not because is hard.
-* Azure Sentinel, but because you should know more than me about that. 
+
 
 
 # Requirements
