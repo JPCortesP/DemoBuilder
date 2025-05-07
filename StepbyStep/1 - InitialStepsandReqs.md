@@ -35,3 +35,6 @@ Some of these requirements might be negotiable and others are so simple that it 
   * Your domain should be already registered as Verified at [Entra](https://entra.microsoft.com/?feature.msaljs=true#view/Microsoft_AAD_IAM/DomainsManagementMenuBlade/~/CustomDomainNames)
 
 ![Entra](</screenshots/Screenshot 2025-05-07 094855.png>)*Note that the domain is added as TLD, not using any subdomain*
+
+### Navigation
+[Next >>](2%20-%20RGs%20and%20Network.md)
