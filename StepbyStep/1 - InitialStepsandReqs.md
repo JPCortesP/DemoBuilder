@@ -13,7 +13,15 @@ In a nutshell, the overal steps are:
 * Configure Intune to deploy **Global Secure Access** client
 * Change NGSs to block external RDP access
 * Deploy local VM in Hyper-V, connect
-* Profit
+* Profit $$
+
+### Out of Scope / Recommended Tasks for later 
+* PIM
+* Any Conditional Access.
+* Azure Backup and stuff like that.
+* Auto-On for VMs.
+* Azure Bastion, but because its expensive, not because is hard.
+* Azure Sentinel, but because you should know more than me about that. 
 
 
 # Requirements
@@ -24,3 +32,6 @@ Some of these requirements might be negotiable and others are so simple that it 
 * A Public Domain, .com, .net, .info, it doesn't really matters. I recommend Godaddy for the fast replication time, however, *any* would do
   * Any here means, any domain registrar that **ALSO PROVIDES DNS**. It's doable to use your own DNS, however, is yet another service either your subscription or you will have to pay for. 
   * Example of Registrar not providing DNS is most of the local registrar, like .cr or .co.cr
+  * Your domain should be already registered as Verified at [Entra](https://entra.microsoft.com/?feature.msaljs=true#view/Microsoft_AAD_IAM/DomainsManagementMenuBlade/~/CustomDomainNames)
+
+![Entra](</screenshots/Screenshot 2025-05-07 094855.png>)*Note that the domain is added as TLD, not using any subdomain*
