@@ -52,6 +52,7 @@ Each of these subnets have a reason to exists, even the last network we added (1
   *   Servers for other servers that can be off and are less important
   *   Apps might be non-server apps or even server-apps that our hypothetical users could access
   *   R3 are clients, either hybrid Domain join or not, which are client VMs we don't necessarily want them to access unrestricted to other stuff
+  *   The last Network, is there if you even want to create a VPN to somewhere, you'll need a full /24 network available
 
 All of these follows the onion/rings of sensitivity concept. NSGs next will make this more intuitive.
 
@@ -77,3 +78,8 @@ By default, Azure provides our network with NAT and free traffic flow outwards (
 * Finally, let's put this NSG to work. Below Settings, click the Subnets blade
   * One by one, Associate each of your Subnets (alternatively, you could go one by one to each of the subnet and associate them, which is even slower)
 
+This will use a single NSG, later you should create more and specifically create rules that might restrict more, and even more important, you should **never go to sleep with RDP Open towards your network**. RDP stands for Ransomware Deployment Protocol just as much as Remote Desktop Protocol. 
+
+
+### Navigation
+[Next >>](/StepbyStep/3%20-%20Servers.md)
