@@ -24,6 +24,7 @@ Some of these requirements might be negotiable and others are so simple that it 
   * Your login info should **not** be using your @microsoft.com login
 * Hyper-V enabled on your local Machine. You could start the installation of Windows 11 ***Pro or Enterprise***  **but not go thru the OOBE** (OOBE is when Windows starts to ask you about your keyboard and language)
   * Hyper-V requires a restart, so enable it beforehand. 
+  * Try to use the most up to date version of W11 Pro or Enterprise as possible, 24h2 for example. 
 * A browser profile, or a total new browser installation (example, Edge Preview) with your login info saved. 
 * A Public Domain, .com, .net, .info, it doesn't really matters. I recommend Godaddy for the fast replication time, however, *any* would do
   * Any here means, any domain registrar that **ALSO PROVIDES DNS**. It's doable to use your own DNS, however, is yet another service either your subscription or you will have to pay for. 

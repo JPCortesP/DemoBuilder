@@ -27,12 +27,13 @@ I Suggest using East 2 as its common to have our subscriptions blocked to some r
 
 ### Out of Scope / Recommended Tasks for later 
 * PIM
-* Any Conditional Access.
+* Most Conditional Access.
 * Azure Backup and stuff like that.
 * Auto-On for VMs.
 * Azure Bastion, but because its expensive, not because is hard.
 * Azure Sentinel, but because you should know more than me about that. 
 * Specific NSGs to limit traffic between Rings
+* Additional Local web apps to test even more Private Access
 
 
 
