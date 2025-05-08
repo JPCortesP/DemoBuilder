@@ -17,7 +17,7 @@ Once connected to the VM, first thing you'll see is Server Manager. Its going to
 2. On the Before you Begin, click Next
 3. Installation Type, maintain "Role-based or Feature-based..." and click next
 4. Make sure your server is selected as the destination server, click next
-5. On the Server Roles is where is at. Select **Both Active Directory Domain Services and DNS Server**. Make sure is not the lightweight version of Active Directory, nor anything other weird stuff. ![alt text](/screenshots/Roles.png)
+5. On the Server Roles is where is at. Select **Both Active Directory Domain Services and DNS Server**. Make sure is not the lightweight version of Active Directory, nor any other weird stuff. ![alt text](/screenshots/Roles.png)
    1. Every selection you make on the Roles page, will bring a confirmation about installing additional features, mostly management. Select them, they are important. 
    2. DNS will complain that your IP Address is DHCP/Dynamic. In Azure, While a VM is alive (ie, not deleted) it'll maintain the same IP so its like it was an Static IP Address, so lets simply continue. 
    3. Click Next
@@ -34,7 +34,7 @@ Promoting a server means making it part of the Domain Controllers. Since we don'
 2. Forest and Domain Functional level should be 2025, there's really not reason to downgrade it since we don't have old servers.
 3. the Directory Server Restore Mode Password is important for later. Add it here. Make it safe, but more importantly, remember it. Click Next.
 4. You won't be able to create a DNS delegation. That's fine, click next. 
-5. The Netbios name will be the first part of your domain name, excluding the dot. In my example, it'll be RIVENDEL (Netbios name are upper case). If you're wondering, when you write your username as Rivendel\Legolas, that's a Netbios name; that's less useful by the day tho. Click Next
+5. The Netbios name will be the first part of your domain name, excluding the dot. In my example, it'll be RIVENDEL (Netbios name are upper case). If you're wondering, when you write your username as Rivendel\Iluvatar, that's a Netbios name; that's less useful by the day tho. Click Next
 6. This is when we are going to pause just a bit, but **only if you added an additional disk in the previous step.** If you did, then follow this steps, otherwise, just click next and go to step 7
    1. Leaving the Wizard Open, click start, then search for disk management
    2. On the Disk Management screen, right click on Disk 1 (the one with the storage unallocated), and in order bring it online (if needed), Initialize it (using GPT), and then right click on the empty space and create a new simple volume![alt text](/screenshots/newSimpleVolume.png)
@@ -46,7 +46,7 @@ Promoting a server means making it part of the Domain Controllers. Since we don'
 8. On the verification of pre-reqs you will see warnings about Dynamic IP instead of static (discussed before), no delegation for DNS. If you see any errors then come back and check again. Click Install
 9. Once the AD Installation is complete, you'll be asked to restart, and that would be it. You have AD. 
 
-On the next login you might want to change your user. In this example, my login user is called legolas, and my domain is rivendel.elfcorp.com. So to login again next time I'll use either rivendel\legolas or legolas@rivendel.elfcorp.com. Either way should work, and the same password as before. 
+On the next login you might want to change your user. In this example, my login user is called Iluvatar, and my domain is rivendel.elfcorp.com. So to login again next time I'll use either rivendel\Iluvatar or Iluvatar@rivendel.elfcorp.com. Either way should work, and the same password as before. 
 
 Before leaving the AD for a bit, we need to do a couple of settings change on both our user and the whole Forest we just created. 
 
@@ -64,7 +64,7 @@ On the Server Manager, click on Tools again, and then open "**Active Directory U
 
 * To make things simpler to manage in the future, right click on the domain name, New, Organizational Unit. 
   * Name it something descriptive, like DemoUsers. Leave the "Protect container..." checked.
-* Inside this container, you should create all the demo users you want, including if you want a different administrator or a fancier username. Since I've used Legolas as my creation user, I'll create a new one here, let's say, JP
+* Inside this container, you should create all the demo users you want, including if you want a different administrator or a fancier username. Since I've used Iluvatar as my creation user, I'll create a new one here, let's say, JP
   * To create users inside the OU we just created, select it and right click and New - User
     * The only required data for a new user is a Full Name (equivalent to Display Name in Entra) and the Logon Name, UPN; make sure to select the right Sufix we created earlier. For this example, I'll use this![alt text](/screenshots/newuser.png). Click Next.
     * Type out a Password you'll remember (there's no rules against re-using demo passwords), and uncheck the "User Must change password at login", and check "Password Never Expires". Click Next and Finish and the user will be created. 
