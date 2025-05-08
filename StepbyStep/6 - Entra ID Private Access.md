@@ -2,7 +2,7 @@
 We are almost there! Here's what we are going to configure on this section:
 
 1. Enable Entra Private Access
-   1. I can't remember how
+   1. ![alt text](/screenshots/ActivateGSA.png) *When accessing for the first time, you'll see the Activate Button. Click on it and wait*
 2. Install a couple of connectors  
    3. Follow this https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-configure-connectors#install-and-register-a-connector. Pre-Reqs on this page don't apply
    
