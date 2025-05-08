@@ -10,7 +10,7 @@ Once connected to the VM, first thing you'll see is Server Manager. Its going to
 - TimeZone to reflect yours
 - Internet explorer protection something something make sure is **Off for Admins**
 ![alt text](<../screenshots/Screenshot 2025-05-07 150709.png>)
-*Some stuff won't match, I'm using a local hypervisor, ran out of Azure Credits while writing this down*
+*Some stuff won't match, I'm using a local hypervisor, ran out of Azure Credits while writing this down. **Also, these two previous steps, do them everytime you connect to a new Windows Server freshly created. You'll thank me later ** *
 
 ### Roles Installation
 1. On the server Manager, click on the top left, Manage, and Add Server Roles and Features:
