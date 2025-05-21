@@ -15,7 +15,7 @@ From the OrgName.CoreServers SG:
        1.  Make sure you don't select **Smalldisk** Images. 
        2.  Make sure you don't select **Server Core** Images
        3.  Whenever is available, is best to use **Azure Edition** images. 
-       4.  Again, no Hotpatch. 
+       4.  Again, no Hot patch. 
    8.  No Azure spot discount. Sometimes it makes sense, but not on these machines that we need them on as much as possible. 
    9.  Size. Normally I would go with **DS1_v2**, that should be enough. 
    10. On the accounts, use a username and remember it. Password should be long and complex. The first account you input here will be used as the Enterprise Admin on the AD, so make sure you remember it. **Don't use your name here.** If your Name is JP, don't use JP, use **[Iluvatar](https://tolkiengateway.net/wiki/Il%C3%BAvatar) instead**. 
