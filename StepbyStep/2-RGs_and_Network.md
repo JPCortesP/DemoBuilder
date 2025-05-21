@@ -36,6 +36,8 @@ Go to the OrgName.Networking RG and then hit create, and search for Virtual Netw
 * (if you forgot to add the address space, add them now to the address space blade below Settings)
 * Click on Settings - Subnets blade
 * Add each of the following subnets, in order (all not noted leave defaults). All with Subnet Purpose "Default":
+
+
   |Name|Range|Size|
   |----|-----|--|
   |R0.CoreServers|.100|28
