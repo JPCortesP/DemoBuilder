@@ -46,6 +46,7 @@ Go to the OrgName.Networking RG and then hit create, and search for Virtual Netw
   |R3.HybridClients|.101|27
   |R3.Clients|.101|27
 
+
   ![alt text](<../screenshots/Screenshot 2025-05-07 110953.png>)
 The reason we want to create them in order is so Azure Portal will calculate the starting IP for the next subnet. This is not a subnetting course, took me a while to learn about it, but you can do so too: [Subnetting Reference](https://www.packetcoders.io/a-beginners-guide-to-subnetting/).
 

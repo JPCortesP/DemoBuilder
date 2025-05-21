@@ -1,5 +1,5 @@
 ## Active Directory Setup
-You probably noted as we advance, the less screenshots I've taken. Let's ignore that and continue to install AD.
+You probably noted, the more we advance, the less screenshots I've taken. Let's ignore that and continue to install AD.
 
 First we will go to the DC01 VM page on azure and click Connect, then on the dropdown select connect, and it'll offer to download an (native)RDP file. **On the VM IP Address, Make sure to select the Public IP** (the one that doesn't starts with 192.168.xxx.x). Do it and open it. If you see this screen below that means there's an misconfiguration and you should yell on the training asking for help. ![alt text](../screenshots/NativeRDPError.png)
 
