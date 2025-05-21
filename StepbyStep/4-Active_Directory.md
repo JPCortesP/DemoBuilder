@@ -1,7 +1,7 @@
 ## Active Directory Setup
 You probably noted as we advance, the less screenshots I've taken. Let's ignore that and continue to install AD.
 
-First we will go to the DC01 VM page on azure and click Connect, then on the dropdown select connect, and it'll offer to download an (native)RDP file. **On the VM IP Address, Make sure to select the Public IP** (the one that doesn't starts with 192.168.xxx.x). Do it and open it. If you see this screen below that means there's an misconfiguration and you should yell on the training asking for help. ![alt text](/screenshots/NativeRDPError.png)
+First we will go to the DC01 VM page on azure and click Connect, then on the dropdown select connect, and it'll offer to download an (native)RDP file. **On the VM IP Address, Make sure to select the Public IP** (the one that doesn't starts with 192.168.xxx.x). Do it and open it. If you see this screen below that means there's an misconfiguration and you should yell on the training asking for help. ![alt text](../screenshots/NativeRDPError.png)
 
 *This is what it looks like when your VM doesn't have a Public IP. In my case is by design, but I already have Entra ID Private Access and disabling just for an screenshot wasn't in the plan*
 
@@ -17,12 +17,12 @@ Once connected to the VM, first thing you'll see is Server Manager. Its going to
 2. On the Before you Begin, click Next
 3. Installation Type, maintain "Role-based or Feature-based..." and click next
 4. Make sure your server is selected as the destination server, click next
-5. On the Server Roles is where is at. Select **Both Active Directory Domain Services and DNS Server**. Make sure is not the lightweight version of Active Directory, nor any other weird stuff. ![alt text](/screenshots/Roles.png)
+5. On the Server Roles is where is at. Select **Both Active Directory Domain Services and DNS Server**. Make sure is not the lightweight version of Active Directory, nor any other weird stuff. ![alt text](../screenshots/Roles.png)
    1. Every selection you make on the Roles page, will bring a confirmation about installing additional features, mostly management. Select them, they are important. 
    2. DNS will complain that your IP Address is DHCP/Dynamic. In Azure, While a VM is alive (ie, not deleted) it'll maintain the same IP so its like it was an Static IP Address, so lets simply continue. 
    3. Click Next
 6. On the Features selection, we don't need to change anything as the roles added the needed features already, so just click continue until "Install" and hit it. 
-7. When done, there will be a message to promote this server to a Domain Controller. Click on it or simply read the next section. Or Both.![alt text](/screenshots/Rolesinstalled.png)
+7. When done, there will be a message to promote this server to a Domain Controller. Click on it or simply read the next section. Or Both.![alt text](../screenshots/Rolesinstalled.png)
 
 ### Domain Controller Promotion
 This is the last time you can check you're doing all of this on the DC01 server. You really don't want to realize now you're doing it on the CloudCon or any other. 
@@ -37,11 +37,11 @@ Promoting a server means making it part of the Domain Controllers. Since we don'
 5. The Netbios name will be the first part of your domain name, excluding the dot. In my example, it'll be RIVENDEL (Netbios name are upper case). If you're wondering, when you write your username as Rivendel\Iluvatar, that's a Netbios name; that's less useful by the day tho. Click Next
 6. This is when we are going to pause just a bit, but **only if you added an additional disk in the previous step.** If you did, then follow this steps, otherwise, just click next and go to step 7
    1. Leaving the Wizard Open, click start, then search for disk management
-   2. On the Disk Management screen, right click on Disk 1 (the one with the storage unallocated), and in order bring it online (if needed), Initialize it (using GPT), and then right click on the empty space and create a new simple volume![alt text](/screenshots/newSimpleVolume.png)
+   2. On the Disk Management screen, right click on Disk 1 (the one with the storage unallocated), and in order bring it online (if needed), Initialize it (using GPT), and then right click on the empty space and create a new simple volume![alt text](../screenshots/newSimpleVolume.png)
    3. Follow the wizard leaving all default, making sure you assign a letter like Z:
    4. Format the drive as NTFS, Default Allocation Unit and a label like "AD Stuff". Make sure its a quick format. 
    5. On the list on the top, when the format finishes you'll see the disk as "Healthy".
-   6. Come back to the DCPromo Wizard, and simply change C: for the letter you selected in the disk before **in all 3 boxes**![alt text](/screenshots/adroutes.png). Click next
+   6. Come back to the DCPromo Wizard, and simply change C: for the letter you selected in the disk before **in all 3 boxes**![alt text](../screenshots/adroutes.png). Click next
 7. Review and download the script if you want; script is useless thought, doesn't make sense to save it. 
 8. On the verification of pre-reqs you will see warnings about Dynamic IP instead of static (discussed before), no delegation for DNS. If you see any errors then come back and check again. Click Install
 9. Once the AD Installation is complete, you'll be asked to restart, and that would be it. You have AD. 
@@ -66,7 +66,7 @@ On the Server Manager, click on Tools again, and then open "**Active Directory U
   * Name it something descriptive, like DemoUsers. Leave the "Protect container..." checked.
 * Inside this container, you should create all the demo users you want, including if you want a different administrator or a fancier username. Since I've used Iluvatar as my creation user, I'll create a new one here, let's say, JP
   * To create users inside the OU we just created, select it and right click and New - User
-    * The only required data for a new user is a Full Name (equivalent to Display Name in Entra) and the Logon Name, UPN; make sure to select the right Sufix we created earlier. For this example, I'll use this![alt text](/screenshots/newuser.png). Click Next.
+    * The only required data for a new user is a Full Name (equivalent to Display Name in Entra) and the Logon Name, UPN; make sure to select the right Sufix we created earlier. For this example, I'll use this![alt text](../screenshots/newuser.png). Click Next.
     * Type out a Password you'll remember (there's no rules against re-using demo passwords), and uncheck the "User Must change password at login", and check "Password Never Expires". Click Next and Finish and the user will be created. 
     * To add this newly created user to admins and giving them greater power than the One Ring, right click on the user and select Add to Group.
     * Add the groups: Administrators, Domain Admins, Enterprise Admins. **Hint: Type the first few letters of a group and then click Check Names so the dialog autocompletes it and adds the required semicolon**. You can add multiple groups at the same time. 
@@ -133,4 +133,6 @@ Write-Output "The computer has been successfully joined to the domain $domain an
 
 
 ### Navigation
+[Repo](https://github.com/JPCortesP/DemoBuilder) | 
+[Index](index.md) | 
 [Next >>](5-AD_Connect.md)

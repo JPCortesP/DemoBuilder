@@ -66,7 +66,7 @@ Now we have given enough time for the initial sync to happen, is time to go to E
 7. After the MFA, you now should be only using this user from now on. 
 8. **NOW is when you start configuring your local VM on Hyper-V. Select configure for Work, and log in with your user who now has full admin rights. This Windows 11 VM will be deployed as Entra ID Join**
    1. If you don't have internet connection on your VM, ask away. Updates and internet here are required before we can use this VM
-   2. If Windows OOBE doesn't ask you for either work or personal, then you are using a Home version of Windows and we will have to re-install. Check the [Requirements](/StepbyStep/1%20-%20InitialStepsandReqs.md).
+   2. If Windows OOBE doesn't ask you for either work or personal, then you are using a Home version of Windows and we will have to re-install. Check the [Requirements](1-InitialStepsandReqs.md).
 
 ### Common Errors
 1. I can't add a new MFA for my newly created user
@@ -76,4 +76,6 @@ Now we have given enough time for the initial sync to happen, is time to go to E
 
 
 ### Navigation
+[Repo](https://github.com/JPCortesP/DemoBuilder) | 
+[Index](index.md) | 
 [Next >>](5.5-Quick_intune_setup.md)

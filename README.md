@@ -8,4 +8,4 @@ This repo holds information and documentation about a mini workhshop being deliv
 ![Logic View](screenshots/LogicViewDiagram.png?raw=true)
 The main objective after the demo preparation, is being able to spin up VMs and connect without enabling external RDP. However, to make omelet we will need to break some eggs, meaning for a short while external RDP should have to be enabled. 
 
-[Start Here>>>](/StepbyStep/0-Reference.md)
+[Start Here>>>](/StepbyStep/0-Reference.md) | [Or Use the Page version (Nicer looking)](https://jpcortesp.github.io/DemoBuilder/StepbyStep/0-Reference.html)

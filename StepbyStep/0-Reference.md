@@ -38,4 +38,6 @@ I Suggest using East 2 as its common to have our subscriptions blocked to some r
 
 
 ### Navigation
+[Repo](https://github.com/JPCortesP/DemoBuilder) | 
+[Index](index.md) | 
 [Next >>](0.5-Hyper-V.md)

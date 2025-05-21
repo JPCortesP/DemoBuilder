@@ -31,7 +31,9 @@ Some of these requirements might be negotiable and others are so simple that it 
   * Example of Registrar not providing DNS is most of the local registrar, like .cr or .co.cr
   * Your domain should be already registered as Verified at [Entra](https://entra.microsoft.com/?feature.msaljs=true#view/Microsoft_AAD_IAM/DomainsManagementMenuBlade/~/CustomDomainNames)
 
-![Entra](</screenshots/Screenshot 2025-05-07 094855.png>)*Note that the domain is added as TLD, not using any subdomain*
+![Entra](<../screenshots/Screenshot 2025-05-07 094855.png>)*Note that the domain is added as TLD, not using any subdomain*
 
 ### Navigation
+[Repo](https://github.com/JPCortesP/DemoBuilder) | 
+[Index](index.md) | 
 [Next >>](2-RGs_and_Network.md)
