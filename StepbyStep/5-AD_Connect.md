@@ -76,4 +76,4 @@ Now we have given enough time for the initial sync to happen, is time to go to E
 
 
 ### Navigation
-[Next >>](/StepbyStep/6%20-%20Entra%20ID%20Private%20Access.md)
+[Next >>](5.5-Quick_intune_setup.md)

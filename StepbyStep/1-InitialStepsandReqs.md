@@ -34,4 +34,4 @@ Some of these requirements might be negotiable and others are so simple that it 
 ![Entra](</screenshots/Screenshot 2025-05-07 094855.png>)*Note that the domain is added as TLD, not using any subdomain*
 
 ### Navigation
-[Next >>](/StepbyStep/1-InitialStepsandReqs.md)
+[Next >>](2-RGs_and_Network.md)

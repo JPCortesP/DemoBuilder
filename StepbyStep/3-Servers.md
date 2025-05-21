@@ -61,4 +61,4 @@ Next step is to install Active Directory Roles and promote your first server.
 
 
 ### Navigation
-[Next >>](/StepbyStep/4%20-%20Active%20Directory.md)
+[Next >>](4-Active_Directory.md)

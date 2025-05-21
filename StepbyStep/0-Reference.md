@@ -38,4 +38,4 @@ I Suggest using East 2 as its common to have our subscriptions blocked to some r
 
 
 ### Navigation
-[Next >>](/StepbyStep/0.5-Hyper-V.md)
+[Next >>](0.5-Hyper-V.md)

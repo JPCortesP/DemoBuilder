@@ -133,4 +133,4 @@ Write-Output "The computer has been successfully joined to the domain $domain an
 
 
 ### Navigation
-[Next >>](/StepbyStep/5%20-%20AD%20Connect.md)
+[Next >>](5-AD_Connect.md)

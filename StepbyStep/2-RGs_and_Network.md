@@ -82,4 +82,4 @@ This will use a single NSG, later you should create more and specifically create
 
 
 ### Navigation
-[Next >>](/StepbyStep/3%20-%20Servers.md)
+[Next >>](3-Servers.md)
