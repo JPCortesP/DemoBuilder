@@ -10,7 +10,7 @@ Now that we are finally here ready to enable our final step, with the Windows Ma
 5. After the updates, Windows should automagically connect to a network. It'll show up as cable/ethernet connection, hit next. If it doesn't connect, let us know. 
 6. You can Name your device. **I strongly recommend you to use a descriptive name, like CloudSAW**. If you do, Windows will restart again![](../screenshots/2025-05-21-11-36-49.png) *SAW here means secure Admin Workstation*
 7. When it gets back, Its the most important part of the whole thing. If you went with Pro or Enterprise image, you should see this: ![](../screenshots/2025-05-21-11-38-08.png). Select Set up for Work or School and hit next
-8. Login with your user, the one you created, and pass any MFA challange ![](../screenshots/2025-05-21-11-39-13.png)
+8. Login with your user, the one you created, and pass any MFA challenge ![](../screenshots/2025-05-21-11-39-13.png)
 9. Now, Windows will do its thing: ![](../screenshots/2025-05-21-11-39-44.png) ![](../screenshots/2025-05-21-11-40-01.png)![](../screenshots/2025-05-21-11-42-53.png)
 10. It will take a while, get yourself some coffee. In my fully setup environment, took a bit more than 30 minutes. I'm auto-installing Office which is a bad idea if you're in a hurry, yours should be faster. 
 11. Before long, you should see something like this. Click Next ![](../screenshots/2025-05-21-11-52-47.png)
@@ -22,14 +22,14 @@ Now that we are finally here ready to enable our final step, with the Windows Ma
     2.  It might fail since we haven't configured everything yet, so Continue for Now if it fails its fine. 
 16. Windows is ready. 
 
-### A few post-installation recomendations.
+### A few post-installation recommendations.
 
-No specific instructions will be provided, but a quick copilot chat or bing search should bring you the instructions.
+No specific instructions will be provided, but a quick copilot chat or Bing search should bring you the instructions.
 
 * Install Company Portal, either via Intune or locally on your store.
 * Install M365 Apps, either via Intune or Locally on your store. 
 * Configure OneDrive to auto-login and auto-sync/backup your folders. This is part of the anti-ransomware protection.
-* Inmediately after a few minutes in the desktop, run Windows Update. 
+* Immediately after a few minutes in the desktop, run Windows Update. 
   * You might want to enable Delivery Optimization locally on your VM. 
 * Configure some Defender Policies on Intune
 * Configure AutoPatch and let it rip thru your VMs
@@ -46,5 +46,5 @@ Since we only enabled RDP ports, 3389, the following should happen:
 
 
 
-[Repo](https://github.com/JPCortesP/DemoBuilder) | 
-[Index](index.md) | 
+
+| [Repo](https://github.com/JPCortesP/DemoBuilder) | [Index](index.md) | 

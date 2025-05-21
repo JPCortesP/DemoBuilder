@@ -1,5 +1,5 @@
 # Initial Steps
-In a nutshell, the overal steps are:
+In a nutshell, the overall steps are:
 
 * Cleanup your subscription if needed
 * Create the RGs

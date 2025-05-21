@@ -34,7 +34,7 @@ Promoting a server means making it part of the Domain Controllers. Since we don'
 2. Forest and Domain Functional level should be 2025, there's really not reason to downgrade it since we don't have old servers.
 3. the Directory Server Restore Mode Password is important for later. Add it here. Make it safe, but more importantly, remember it. Click Next.
 4. You won't be able to create a DNS delegation. That's fine, click next. 
-5. The Netbios name will be the first part of your domain name, excluding the dot. In my example, it'll be RIVENDEL (Netbios name are upper case). If you're wondering, when you write your username as Rivendel\Iluvatar, that's a Netbios name; that's less useful by the day tho. Click Next
+5. The NetBIOS name will be the first part of your domain name, excluding the dot. In my example, it'll be RIVENDEL (NetBIOS name are upper case). If you're wondering, when you write your username as Rivendel\Iluvatar, that's a NetBIOS name; that's less useful by the day though. Click Next
 6. This is when we are going to pause just a bit, but **only if you added an additional disk in the previous step.** If you did, then follow this steps, otherwise, just click next and go to step 7
    1. Leaving the Wizard Open, click start, then search for disk management
    2. On the Disk Management screen, right click on Disk 1 (the one with the storage unallocated), and in order bring it online (if needed), Initialize it (using GPT), and then right click on the empty space and create a new simple volume![alt text](../screenshots/newSimpleVolume.png)
